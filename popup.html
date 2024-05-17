@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>essence - precise summaries. every time.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo_60.png" alt="essence"> <!-- Replace with your logo's path -->
+    </div>
+    <div class="audio-player">
+      <!-- Placeholder for audio player controls -->
+    </div>
+    <!-- Close button -->
+    <button class="close-button" id="closeButton">[ X ]</button>
+
+  </div>
+  <div class="content">
+    <div class="loader">
+      <div class="loading-steps">Extracting...</div>
+    </div>
+    <div id="articleContent">
+      <div id="inference">
+        <div id="timesaved">Time saved: <span class="timesaved"></span> min</div>
+        <div id="sentiment">Sentiment: <span class="bullet blue"></span></div>
+        <div id="tone">Tone: <span class="bullet brand"></span></div>
+        <div id="topics" class="topics"></div>
+      </div>
+      <div id="summary" class="text"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

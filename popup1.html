@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Content Fetcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Google Sans', sans-serif;
+      background-color: #EDEDE9;
+    }
+
+    .header {
+      background-color: #EDEDE9;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .brand {
+      color: #333;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .content {
+      background-color: #FFF;
+      color: #333;
+      padding: 20px;
+    }
+
+    .audio-player {
+      background-color: #FFE4CE;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .audio-player-controls {
+      display: flex;
+      justify-content: center;
+      /* Add your audio player styling here */
+    }
+
+    footer {
+      background-color: #EDEDE9;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div class="header">
+      <div class="brand">One click summary</div>
+    </div>
+    <div class="content">
+      <h1 id="articleTitle">Title</h1>
+      <!-- Content will go here -->
+      <div class="audio-player">
+        <!-- Audio player controls will go here -->
+        <div class="audio-player-controls">
+          <!-- Insert audio player HTML here -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a id="loginSignup" href="#">Sign in or Create a free account</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
